@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842A2ED71FF433F0002C84A3 /* MainSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */; };
+		8433886E1FF2CEFE0014DF56 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */; };
+		84B4863F1FF4BFC5007698EE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4863E1FF4BFC5007698EE /* LocalAuthentication.framework */; };
 		84DC8BAB1FF253AF00582C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8BAA1FF253AF00582C03 /* AppDelegate.swift */; };
-		84DC8BAD1FF253AF00582C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8BAC1FF253AF00582C03 /* ViewController.swift */; };
+		84DC8BAD1FF253AF00582C03 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8BAC1FF253AF00582C03 /* Login.swift */; };
 		84DC8BB01FF253AF00582C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BAE1FF253AF00582C03 /* Main.storyboard */; };
 		84DC8BB21FF253AF00582C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BB11FF253AF00582C03 /* Assets.xcassets */; };
 		84DC8BB51FF253AF00582C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BB31FF253AF00582C03 /* LaunchScreen.storyboard */; };
+		B938CC254BF1E28F0114FEED /* Pods_KipIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F401B9745ABCFEC8CC24C4 /* Pods_KipIt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4631064BE9461282EB3F6F9D /* Pods-KipIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KipIt/Pods-KipIt.debug.xcconfig"; sourceTree = "<group>"; };
+		60F401B9745ABCFEC8CC24C4 /* Pods_KipIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneVC.swift; sourceTree = "<group>"; };
+		8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		84B4863E1FF4BFC5007698EE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		84DC8BA71FF253AF00582C03 /* KipIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DC8BAA1FF253AF00582C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84DC8BAC1FF253AF00582C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DC8BAC1FF253AF00582C03 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		84DC8BAF1FF253AF00582C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DC8BB11FF253AF00582C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DC8BB41FF253AF00582C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DC8BB61FF253AF00582C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39A500BCDFEE2A3560D2AAB /* Pods-KipIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-KipIt/Pods-KipIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B4863F1FF4BFC5007698EE /* LocalAuthentication.framework in Frameworks */,
+				B938CC254BF1E28F0114FEED /* Pods_KipIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B316DB73B9F9326829A40A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4631064BE9461282EB3F6F9D /* Pods-KipIt.debug.xcconfig */,
+				D39A500BCDFEE2A3560D2AAB /* Pods-KipIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		842A2ED11FF3BE3A002C84A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842A2ED21FF3BE42002C84A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842A2ED31FF3BE47002C84A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84DC8BAC1FF253AF00582C03 /* Login.swift */,
+				842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84B4863D1FF4BFC5007698EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B4863E1FF4BFC5007698EE /* LocalAuthentication.framework */,
+				60F401B9745ABCFEC8CC24C4 /* Pods_KipIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84DC8B9E1FF253AF00582C03 = {
 			isa = PBXGroup;
 			children = (
 				84DC8BA91FF253AF00582C03 /* KipIt */,
 				84DC8BA81FF253AF00582C03 /* Products */,
+				84B4863D1FF4BFC5007698EE /* Frameworks */,
+				49B316DB73B9F9326829A40A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +110,10 @@
 		84DC8BA91FF253AF00582C03 /* KipIt */ = {
 			isa = PBXGroup;
 			children = (
+				842A2ED21FF3BE42002C84A3 /* Model */,
+				842A2ED11FF3BE3A002C84A3 /* View */,
+				842A2ED31FF3BE47002C84A3 /* Controller */,
 				84DC8BAA1FF253AF00582C03 /* AppDelegate.swift */,
-				84DC8BAC1FF253AF00582C03 /* ViewController.swift */,
 				84DC8BAE1FF253AF00582C03 /* Main.storyboard */,
 				84DC8BB11FF253AF00582C03 /* Assets.xcassets */,
 				84DC8BB31FF253AF00582C03 /* LaunchScreen.storyboard */,
@@ -71,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DC8BB91FF253AF00582C03 /* Build configuration list for PBXNativeTarget "KipIt" */;
 			buildPhases = (
+				7316AB2CE8B256CFBB5E82D4 /* [CP] Check Pods Manifest.lock */,
 				84DC8BA31FF253AF00582C03 /* Sources */,
 				84DC8BA41FF253AF00582C03 /* Frameworks */,
 				84DC8BA51FF253AF00582C03 /* Resources */,
+				2DCF70853BCA88B38A87FB8B /* [CP] Embed Pods Frameworks */,
+				56A57AD9270B7AFCFF5EBDAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +192,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DCF70853BCA88B38A87FB8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KipIt/Pods-KipIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KipIt/Pods-KipIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56A57AD9270B7AFCFF5EBDAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KipIt/Pods-KipIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7316AB2CE8B256CFBB5E82D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84DC8BA31FF253AF00582C03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DC8BAD1FF253AF00582C03 /* ViewController.swift in Sources */,
+				842A2ED71FF433F0002C84A3 /* MainSceneVC.swift in Sources */,
+				8433886E1FF2CEFE0014DF56 /* FirstLaunch.swift in Sources */,
+				84DC8BAD1FF253AF00582C03 /* Login.swift in Sources */,
 				84DC8BAB1FF253AF00582C03 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +389,13 @@
 		};
 		84DC8BBA1FF253AF00582C03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4631064BE9461282EB3F6F9D /* Pods-KipIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG7CVD22MG;
 				INFOPLIST_FILE = KipIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = devdavut.KipIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +406,13 @@
 		};
 		84DC8BBB1FF253AF00582C03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39A500BCDFEE2A3560D2AAB /* Pods-KipIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG7CVD22MG;
 				INFOPLIST_FILE = KipIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = devdavut.KipIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
