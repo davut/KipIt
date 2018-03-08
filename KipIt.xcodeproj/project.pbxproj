@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		842A2ED71FF433F0002C84A3 /* MainSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */; };
 		8433886E1FF2CEFE0014DF56 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */; };
+		8438D06A20079B25004F16A1 /* FakeScenePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438D06920079B25004F16A1 /* FakeScenePasswordVC.swift */; };
+		844D55CF1FF9787B00A5F7FB /* Db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844D55CD1FF9787B00A5F7FB /* Db.xcdatamodeld */; };
+		844D55D11FF97C1D00A5F7FB /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D55D01FF97C1D00A5F7FB /* PhotosVC.swift */; };
+		8464EFB9201603420095D14C /* FakeSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464EFB8201603420095D14C /* FakeSceneVC.swift */; };
+		84931C241FFA804C00CE56C1 /* StackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84931C231FFA804C00CE56C1 /* StackCollectionViewCell.swift */; };
+		84A60E3C1FFAB42C00D46E64 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A60E3B1FFAB42C00D46E64 /* FetchData.swift */; };
 		84B4863F1FF4BFC5007698EE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B4863E1FF4BFC5007698EE /* LocalAuthentication.framework */; };
 		84DC8BAB1FF253AF00582C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8BAA1FF253AF00582C03 /* AppDelegate.swift */; };
 		84DC8BAD1FF253AF00582C03 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC8BAC1FF253AF00582C03 /* Login.swift */; };
 		84DC8BB01FF253AF00582C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BAE1FF253AF00582C03 /* Main.storyboard */; };
 		84DC8BB21FF253AF00582C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BB11FF253AF00582C03 /* Assets.xcassets */; };
 		84DC8BB51FF253AF00582C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC8BB31FF253AF00582C03 /* LaunchScreen.storyboard */; };
+		84E794CE201B778A00426AA1 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E794CD201B778A00426AA1 /* PhotosCollectionViewCell.swift */; };
+		84E8E8B12003FC25003B2FEA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8E8B02003FC25003B2FEA /* SettingsVC.swift */; };
 		B938CC254BF1E28F0114FEED /* Pods_KipIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F401B9745ABCFEC8CC24C4 /* Pods_KipIt.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +31,12 @@
 		60F401B9745ABCFEC8CC24C4 /* Pods_KipIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneVC.swift; sourceTree = "<group>"; };
 		8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		8438D06920079B25004F16A1 /* FakeScenePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeScenePasswordVC.swift; sourceTree = "<group>"; };
+		844D55CE1FF9787B00A5F7FB /* Db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Db.xcdatamodel; sourceTree = "<group>"; };
+		844D55D01FF97C1D00A5F7FB /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		8464EFB8201603420095D14C /* FakeSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSceneVC.swift; sourceTree = "<group>"; };
+		84931C231FFA804C00CE56C1 /* StackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCollectionViewCell.swift; sourceTree = "<group>"; };
+		84A60E3B1FFAB42C00D46E64 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		84B4863E1FF4BFC5007698EE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		84DC8BA71FF253AF00582C03 /* KipIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DC8BAA1FF253AF00582C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +45,8 @@
 		84DC8BB11FF253AF00582C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DC8BB41FF253AF00582C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DC8BB61FF253AF00582C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E794CD201B778A00426AA1 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		84E8E8B02003FC25003B2FEA /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		D39A500BCDFEE2A3560D2AAB /* Pods-KipIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-KipIt/Pods-KipIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8433886D1FF2CEFE0014DF56 /* FirstLaunch.swift */,
+				84A60E3B1FFAB42C00D46E64 /* FetchData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,8 +93,21 @@
 			children = (
 				84DC8BAC1FF253AF00582C03 /* Login.swift */,
 				842A2ED61FF433F0002C84A3 /* MainSceneVC.swift */,
+				844D55D01FF97C1D00A5F7FB /* PhotosVC.swift */,
+				84E8E8B02003FC25003B2FEA /* SettingsVC.swift */,
+				8438D06920079B25004F16A1 /* FakeScenePasswordVC.swift */,
+				8464EFB8201603420095D14C /* FakeSceneVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		84931C221FFA802300CE56C1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84931C231FFA804C00CE56C1 /* StackCollectionViewCell.swift */,
+				84E794CD201B778A00426AA1 /* PhotosCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		84B4863D1FF4BFC5007698EE /* Frameworks */ = {
@@ -110,6 +140,7 @@
 		84DC8BA91FF253AF00582C03 /* KipIt */ = {
 			isa = PBXGroup;
 			children = (
+				84931C221FFA802300CE56C1 /* Cell */,
 				842A2ED21FF3BE42002C84A3 /* Model */,
 				842A2ED11FF3BE3A002C84A3 /* View */,
 				842A2ED31FF3BE47002C84A3 /* Controller */,
@@ -118,6 +149,7 @@
 				84DC8BB11FF253AF00582C03 /* Assets.xcassets */,
 				84DC8BB31FF253AF00582C03 /* LaunchScreen.storyboard */,
 				84DC8BB61FF253AF00582C03 /* Info.plist */,
+				844D55CD1FF9787B00A5F7FB /* Db.xcdatamodeld */,
 			);
 			path = KipIt;
 			sourceTree = "<group>";
@@ -252,9 +284,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				842A2ED71FF433F0002C84A3 /* MainSceneVC.swift in Sources */,
+				844D55CF1FF9787B00A5F7FB /* Db.xcdatamodeld in Sources */,
+				844D55D11FF97C1D00A5F7FB /* PhotosVC.swift in Sources */,
+				84931C241FFA804C00CE56C1 /* StackCollectionViewCell.swift in Sources */,
 				8433886E1FF2CEFE0014DF56 /* FirstLaunch.swift in Sources */,
+				84E794CE201B778A00426AA1 /* PhotosCollectionViewCell.swift in Sources */,
 				84DC8BAD1FF253AF00582C03 /* Login.swift in Sources */,
+				8464EFB9201603420095D14C /* FakeSceneVC.swift in Sources */,
+				84A60E3C1FFAB42C00D46E64 /* FetchData.swift in Sources */,
 				84DC8BAB1FF253AF00582C03 /* AppDelegate.swift in Sources */,
+				8438D06A20079B25004F16A1 /* FakeScenePasswordVC.swift in Sources */,
+				84E8E8B12003FC25003B2FEA /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +483,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		844D55CD1FF9787B00A5F7FB /* Db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				844D55CE1FF9787B00A5F7FB /* Db.xcdatamodel */,
+			);
+			currentVersion = 844D55CE1FF9787B00A5F7FB /* Db.xcdatamodel */;
+			path = Db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84DC8B9F1FF253AF00582C03 /* Project object */;
 }

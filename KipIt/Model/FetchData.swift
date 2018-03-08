@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import CoreData
+
+//class FetchData {
+//    func loadData(db: NSManagedObject,with fetchDb: [NSManagedObject], managedObjectContext: NSManagedObjectContext) {
+//        let requestCategory: NSFetchRequest = db.fetchRequest()
+//        do{
+//            fetchDb = try managedObjectContext.fetch(requestCategory)
+//        } catch {
+//            print("Couldnt fetch \(error.localizedDescription)")
+//        }
+//    }
+//}
+
