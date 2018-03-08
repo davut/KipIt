@@ -11,15 +11,17 @@ import Photos
 import CoreData
 class PhotosVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
-    fileprivate let itemsPerRow: CGFloat = 2
+    fileprivate let itemsPerRow: CGFloat = 3
     fileprivate let sectionInsets = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
-    //var images = [UIImage]()
+    var images = Images().image
+    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     var managedObjectContext:NSManagedObjectContext?
     var titleOfAlbum = ""
     var photos = [Photos]()
     var userCollections: PHFetchResult<PHCollection>!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         setCollectionView()
         loadData()
@@ -52,7 +54,6 @@ class PhotosVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
             picker.dismiss(animated: true, completion: {
                 self.createPresentItem(with: image)
                 self.collectionView.reloadData()
-                print(self.photos)
             })
         }
     }
@@ -60,7 +61,7 @@ class PhotosVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     func createPresentItem (with image:UIImage) {
         
         let photo = Photos(context: managedObjectContext!)
-        photo.image = NSData(data: UIImageJPEGRepresentation(image, 0.7)!) as Data
+        photo.image = NSData(data: UIImageJPEGRepresentation(image, 1)!) as Data
         photo.category_name = titleOfAlbum
         do {
             try self.managedObjectContext?.save()
@@ -75,26 +76,30 @@ class PhotosVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
 
         do {
             photos = (try managedObjectContext?.fetch(photoRequest))!
+            images.removeAll()
+            for category in photos {
+                if category.category_name == titleOfAlbum {
+                    if let image = UIImage(data: category.image!) {
+                            images.append(image)
+                    }
+                }
+            }
             self.collectionView.reloadData()
-        }catch {
+        } catch {
             print("Could not load data from database \(error.localizedDescription)")
         }
-
-
     }
     
 }
 
 extension PhotosVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PhotosCollectionViewCell
-        if let photosImage = UIImage(data: (photos[indexPath.row].image)!) {
-            cell.imageView.image = photosImage
-        }
+        cell.imageView.image = images[indexPath.row]
         return cell
     }
     
@@ -111,8 +116,23 @@ extension PhotosVC: UICollectionViewDelegate, UICollectionViewDataSource {
         collectionView.collectionViewLayout = layout
         collectionView.reloadData()
     }
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedCell = collectionView.cellForItem(at: indexPath) as! PhotosCollectionViewCell
+        imageView.contentMode = .scaleAspectFill
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        view.addSubview(imageView)
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGesture)
+        imageView.image = selectedCell.imageView.image
+        collectionView.allowsSelection = false
+        navigationController?.navigationBar.isHidden = true
+        
+    }
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        imageView.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+        collectionView.allowsSelection = true
+    }
 }
 
 

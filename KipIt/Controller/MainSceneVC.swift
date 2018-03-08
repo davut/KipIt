@@ -13,24 +13,27 @@ class MainSceneVC: UIViewController, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
     var managedObjectContext: NSManagedObjectContext!
     var categories = [Categories]()
+    var photos = [Photos]()
+    var images = Images().image
+    var last = UIImage()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
         managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         setCollectionView()
         loadData()
-        let alert = UIAlertController(title: "Is it MainKip", message: "\(isMainKip)", preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-        UIApplication.shared.setAlternateIconName("iulogo") { (error) in
-            print(error?.localizedDescription ?? "No error desc")
-        }
     }
     
     // Functions
     func loadData() {
         let requestCategory: NSFetchRequest<Categories> = Categories.fetchRequest()
+        let requestPhotos: NSFetchRequest<Photos> = Photos.fetchRequest()
         do{
+            photos = try managedObjectContext.fetch(requestPhotos)
             categories = try managedObjectContext.fetch(requestCategory)
             collectionView.reloadData()
         } catch {
@@ -91,7 +94,13 @@ extension MainSceneVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StackCollectionViewCell
-        cell.imageView.image = #imageLiteral(resourceName: "defaultPhoto")
+        for images in photos where images.category_name == categories[indexPath.row].category_name {
+            if let image = UIImage(data: images.image!){
+                last = image
+            }
+        }
+        images.append(last)
+        cell.imageView.image = images[indexPath.row]
         cell.collectionNameLbl.text = categories[indexPath.row].category_name
         return cell
     }

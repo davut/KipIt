@@ -13,8 +13,9 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.layer.cornerRadius = 5
+        imageView.image = #imageLiteral(resourceName: "defaultPhoto")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 5
     }
 }

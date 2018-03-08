@@ -72,8 +72,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-Hh-59p">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACf-Hh-59p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kkb-2k-4ef">
                                     <size key="itemSize" width="131" height="155"/>
@@ -89,7 +89,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="131" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="mLg-PS-tcu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLg-PS-tcu">
                                                     <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="131" id="P22-5V-M1I"/>
@@ -110,6 +110,7 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="16w-aJ-lXX" secondAttribute="bottom" constant="2" id="Ps8-Gt-e8U"/>
                                             <constraint firstItem="16w-aJ-lXX" firstAttribute="trailing" secondItem="mLg-PS-tcu" secondAttribute="trailing" id="hKk-KC-l3e"/>
                                             <constraint firstItem="16w-aJ-lXX" firstAttribute="leading" secondItem="5l1-Kc-pVT" secondAttribute="leading" id="nu4-Xs-lgl"/>
+                                            <constraint firstItem="mLg-PS-tcu" firstAttribute="top" secondItem="5l1-Kc-pVT" secondAttribute="topMargin" constant="5" id="xgo-WR-EnL"/>
                                             <constraint firstItem="16w-aJ-lXX" firstAttribute="top" secondItem="mLg-PS-tcu" secondAttribute="bottom" id="yn0-Oy-PV3"/>
                                         </constraints>
                                         <connections>
@@ -126,7 +127,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ACf-Hh-59p" firstAttribute="top" secondItem="wIN-V9-NEe" secondAttribute="top" id="GZj-VH-lbF"/>
+                            <constraint firstItem="ACf-Hh-59p" firstAttribute="top" secondItem="SiM-U5-DRP" secondAttribute="top" id="GZj-VH-lbF"/>
                             <constraint firstItem="ACf-Hh-59p" firstAttribute="bottom" secondItem="wIN-V9-NEe" secondAttribute="bottom" id="e69-cX-xx9"/>
                             <constraint firstItem="ACf-Hh-59p" firstAttribute="trailing" secondItem="wIN-V9-NEe" secondAttribute="trailing" id="geS-zR-lZD"/>
                             <constraint firstItem="ACf-Hh-59p" firstAttribute="leading" secondItem="wIN-V9-NEe" secondAttribute="leading" id="j1c-t7-peI"/>
@@ -152,8 +153,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Vv-Bc-b4o">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Vv-Bc-b4o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m4v-JQ-SYl">
                                     <size key="itemSize" width="156" height="139"/>
@@ -169,16 +170,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="156" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-9e-HFN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-9e-HFN">
                                                     <rect key="frame" x="0.0" y="0.0" width="156" height="139"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="140" id="OdZ-F3-bcz"/>
+                                                        <constraint firstAttribute="height" constant="140" id="r1h-Ao-Sid"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="VBZ-9e-HFN" firstAttribute="top" secondItem="A1r-uA-3GT" secondAttribute="top" constant="5" id="4sL-1z-nFo"/>
                                             <constraint firstItem="3Vv-Bc-b4o" firstAttribute="top" secondItem="A1r-uA-3GT" secondAttribute="top" id="KVS-a9-uiF"/>
                                             <constraint firstAttribute="trailing" secondItem="VBZ-9e-HFN" secondAttribute="trailing" id="cTz-cj-NgD"/>
                                             <constraint firstItem="VBZ-9e-HFN" firstAttribute="leading" secondItem="A1r-uA-3GT" secondAttribute="leading" id="ofS-hR-kL3"/>
-                                            <constraint firstAttribute="bottom" secondItem="VBZ-9e-HFN" secondAttribute="bottom" id="pOa-2z-DtN"/>
+                                            <constraint firstAttribute="bottom" secondItem="VBZ-9e-HFN" secondAttribute="bottom" constant="5" id="pOa-2z-DtN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="VBZ-9e-HFN" id="Yg3-5f-bA0"/>
@@ -191,7 +197,7 @@
                         <constraints>
                             <constraint firstItem="3Vv-Bc-b4o" firstAttribute="trailing" secondItem="nGE-W1-sLM" secondAttribute="trailing" id="DSM-DX-ySS"/>
                             <constraint firstItem="3Vv-Bc-b4o" firstAttribute="leading" secondItem="nGE-W1-sLM" secondAttribute="leading" id="Fux-jL-nmV"/>
-                            <constraint firstItem="3Vv-Bc-b4o" firstAttribute="top" secondItem="nGE-W1-sLM" secondAttribute="top" id="K9B-F3-DVm"/>
+                            <constraint firstItem="3Vv-Bc-b4o" firstAttribute="top" secondItem="hVE-2n-T1K" secondAttribute="top" id="K9B-F3-DVm"/>
                             <constraint firstItem="3Vv-Bc-b4o" firstAttribute="bottom" secondItem="nGE-W1-sLM" secondAttribute="bottom" id="QU0-zn-phH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nGE-W1-sLM"/>
@@ -346,6 +352,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zVX-63-RKC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZEg-Cy-eLX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -363,6 +370,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eYk-TJ-uUp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vGp-SL-Ysr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -376,7 +384,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="4608" height="2592"/>
+        <image name="4" width="4272" height="2848"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
 </document>
